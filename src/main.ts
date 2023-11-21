@@ -7,6 +7,9 @@ async function bootstrap() {
 
   // Cors
 
-  app.enableCors({ origin: 'https://user-crud-fcwm.onrender.com' });
+  app.enableCors({
+    origin: 'https://user-crud-fcwm.onrender.com',
+    credentials: true,
+  });
 }
 bootstrap();
