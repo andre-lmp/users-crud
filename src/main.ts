@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen('https://user-crud-fcwm.onrender.com');
+  await app.listen(3000);
 
   // Cors
   app.enableCors({
