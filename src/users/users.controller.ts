@@ -27,7 +27,7 @@ export class UsersController {
 
   @Get(':id')
   findUser(@Param('id') id: number) {
-    return this.usersService.findUser(id);
+    return this.usersService.findUser(Number(id));
   }
 
   @Patch(':id')
